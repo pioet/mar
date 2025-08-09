@@ -16,6 +16,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
 )
 
 var rootCmd = &cobra.Command{
@@ -102,7 +103,7 @@ var DB *gorm.DB // global database connection
 func initDb() {
 	dbPath := viper.GetString("database.path")
 	db, err := gorm.Open(sqlite.Open(dbPath), &gorm.Config{
-		// Logger: logger.Default.LogMode(logger.Silent),
+		Logger: logger.Default.LogMode(logger.Silent),
 	})
 	if err != nil {
 		pterm.FgRed.Printf("Failed to connect to database at %s: %v\n", dbPath, err)
