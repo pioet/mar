@@ -23,7 +23,15 @@
 ## Installation
 
 ```bash
-go install github.com/pioet/mar@latest
+go install github.com/pioet/mar
+```
+
+Tips: You may need to set `GOPATH` to use cli installed by go.
+
+```bash
+# Go path in .bashrc
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 ```
 
 ## Usage
