@@ -8,6 +8,10 @@
 
 **Mar** is a fast and efficient CLI tool for managing and navigating bookmarks. Built with **Golang**, it offers blazing fast performance.  It supports **not only web URLs but also local file paths**, and can export bookmarks to browser-compatible files (such as Chrome/Edge). With the use of **tag**, you can quickly access your frequently used bookmarks at lightning speed.
 
+<p align="center">
+  <img src="docs/images/mar-showcase.gif" alt="Mar showcase" width="100%">
+</p>
+
 ## Features
 
 - **Quick access** — Organize and access bookmarks by tags (alias)
